@@ -8,5 +8,5 @@ CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 EXPOSE 80
 WORKDIR /var/www/html
 VOLUME /var/log/apache2
-ADD flight.tar.gz /var/www/html
+COPY . /var/www/html
 
